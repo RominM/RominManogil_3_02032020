@@ -42,6 +42,7 @@ nav .link{
     border-radius: 20px;
     margin-bottom: 10px;
     box-shadow: 1px 10px 10px 5px #EAEAEA;
+    color: #000;
 }
 nav .link .bulle{
     margin-right: 15px;
@@ -52,6 +53,17 @@ nav .link .bulle{
     text-align: center;
     position: relative;
     margin-top: 13px;
+    color: #fff;
+}
+nav .link .imgFlex{
+    display: flex;
+    width: 15px;
+}
+.imgFlex .points{
+    width: 7px;
+}
+nav .link p{
+    margin-left: 15px;
 }
 
 .select{
