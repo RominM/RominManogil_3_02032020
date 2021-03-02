@@ -1,0 +1,11 @@
+.body{
+    background-color: red;
+}
+
+.select .resto{
+    width: 250px;
+}
+
+.resto .photo{
+    width: 100%;
+}
