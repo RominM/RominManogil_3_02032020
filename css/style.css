@@ -53,200 +53,86 @@
 
 @font-face {
     font-family: 'Roboto-Medium';
-    src: url(../fonts/Roboto-Medium.ttf) format('truetype');
+    src: url(../fonts/Roboto/Roboto-Medium.ttf) format('truetype');
 }
 
 @font-face {
     font-family: 'Roboto-Bold';
-    src: url(../fonts/Roboto-Bold.ttf) format('truetype');
+    src: url(../fonts/Roboto/Roboto-Bold.ttf) format('truetype');
 }
 
 @font-face {
     font-family: 'Roboto-Light';
-    src: url(../fonts/Roboto-Light.ttf) format('truetype');
+    src: url(../fonts/Roboto/Roboto-Light.ttf) format('truetype');
 }
 
-.logo{
+@font-face {
+    font-family: 'Shrikhand';
+    src: url(../fonts/Shrikhand/Shrikhand-Regular.ttf) format('truetype');
+}
+
+.logo__title {
+    font-family: 'Shrikhand';
+    font-size: 2em;
     text-align: center;
-    align-items: center;
+    margin: 15px;
 }
 
-.logo img{
-    width: 50%;
-    margin: auto;
-    padding: 15px;
-}
-
-.markerBack {
-    width: 100%;
-    margin: auto;
-    height: 50px;
-    background-color: #ebebeb;
-    box-shadow: inset -5px 10px 10px -10px #b3b3b3;
-}
-
-.markerBack .marker {
-    display: flex;
-    justify-content: space-between;
-    width: 38%;
-    margin: auto;
-    padding: 17px;
-}
-
-.marker img {
-    width: 12px;
-}
-.marker p {
-    font-family : 'Roboto-Medium';
-    font-size: 1em;
-}
-
-.titleTxtBack {
-    width: 100%;
-    margin: auto;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    background-color: #f3f3f3;
-}
-
-.titleTxt1 {
-    font-family: 'Roboto-Bold';
-    font-size: 1.5em;
-    width: 75%;
-    margin: auto;
-    text-align: center;
-    line-height: 1.1em;
-}
-
-.titleTxt2 {
-    font-family: 'Roboto-Light';
-    font-size: 1.1em;
-    text-align: center;
-    line-height: 1.2em;
-    margin-top: 17px;
-    margin-bottom: 30px;
-}
-
-.titleTxt a {
-    text-decoration: none;
-}
-
-.titleTxt button {
-    display: block;
-    margin: auto;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 35px;
-    width: 220px;
-    height: 50px;
-    background: linear-gradient(#FF79DA , #9356DC);
-    color: #fff;
-    font-family: 'Roboto-Medium';
-    font-size: 0.95em;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-
-header .position{
+.local {
     display: flex;
     justify-content: center;
-    background-color: #EAEAEA;
+    padding: 15px;
+    background-color: rgb(238, 238, 238);
+    box-shadow: inset 0px 3px 7px -2px rgb(168, 168, 168);
 }
-header .titleTxt{
-    background-color: #F6F6F6;
-}
-header .title{
-    text-align: center;
-}
-header .title2{
-    text-align: center;
-}
-header button{
-    display: block;
-    margin: auto;
-    border: none;
-    border-radius: 25px;
-    width: 230px;
-    height: 50px;
-    background: linear-gradient(pink, purple);
-}   
-header.bouton{
-    align-self: center;
-}
-nav ul{
-    list-style: none;
-}
-nav .link{
-    display: flex;
-    text-decoration: none;
-    width: 250px;
-    height: 50px;
-    border-radius: 20px;
-    margin-bottom: 10px;
-    box-shadow: 1px 10px 10px 5px #EAEAEA;
-    color: #000;
-}
-nav .link .bulle{
+
+.local img {
+    width: 12px;
     margin-right: 15px;
-    background-color: #9356DC;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
+    margin-top: -5px;
+}
+
+.local p, .explore a {
+    font-family: 'Roboto-Medium';
+}
+
+.explore {
+    background-color: rgb(247, 247, 247);
     text-align: center;
-    position: relative;
-    margin-top: 13px;
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 65px;
+}
+
+.explore h2 {
+    font-family: 'Roboto-Bold';
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+.explore h3 {
+    font-family: 'Roboto-Light';
+    font-size: 1em;
+    margin-bottom: 50px;
+}
+
+.explore h3, .explore h2 {
+    line-height: 1.2em;
+}
+
+.explore a {
+    text-decoration: none;
+    padding: 15px;
+    border: none; 
+    border-radius: 30px; 
+    background: linear-gradient(#9356DC, #FF79DA);
     color: #fff;
-}
-nav .link .imgFlex{
-    display: flex;
-    width: 15px;
-}
-.imgFlex .points{
-    width: 7px;
-}
-nav .link p{
-    margin-left: 15px;
+    box-shadow: 4px 4px 10px 2px #c2c2c2;
+    transition: 0.3s;
 }
 
-.select{
+.explore a:hover {
+    box-shadow: 4px 4px 8px 5px #b1b1b1;
+    background: linear-gradient(#b172ff, #ff8bde);
 }
-.select .resto{
-    width: 100%;
-}
-
-.zone{
-    display: flex;
-}
-.photo img{
-    width: 100%;
-    height: 175px;
-    object-fit: cover;
-}
-.link .txt{
-}
-.heart img{
-    width: 25px;
-} */
